@@ -7,11 +7,15 @@ authors = [
 ]
 dependencies = [
     "scikit-learn>=1.5.1",
+    "fastapi>=0.114.0",
+    "uvicorn[standard]>=0.30.6",
 ]
 requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
+[project.scripts]
+fish-predict="fishregression.pred:pred"
 
 [tool.pdm]
 distribution = false
