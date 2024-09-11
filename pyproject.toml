@@ -1,6 +1,6 @@
 [project]
 name = "fishregression"
-version = "0.5.1"
+version = "0.5.2"
 description = "Default template for PDM package"
 authors = [
     {name = "Mingk42", email = "xoals123456t@gmail.com"},

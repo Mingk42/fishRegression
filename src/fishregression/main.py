@@ -9,6 +9,10 @@ with open(get_model_path(), "rb") as f:
 
 app = FastAPI()
 
+@app.get("/")
+def idx():
+    return {"conn":"ok"}
+
 @app.get("/fish")
 def fish(length:float):
     """
