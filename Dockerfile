@@ -6,6 +6,6 @@ WORKDIR app/
 COPY .  app/
 
 RUN pip install --upgrade pip
-RUN pip install git+https://github.com/Mingk42/fishRegression.git@v0.5.0/api_merge
+RUN pip install git+https://github.com/Mingk42/fishRegression.git@v0.5.1/aws
 
 CMD ["uvicorn", "fishregression.main:app", "--host", "0.0.0.0", "--port", "8080"]
